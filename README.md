@@ -269,7 +269,7 @@ this.neuralNetwork = NNFramework.model({
 
 ### Get Predictions
 
-The .predict() method requires an array as an input, that has the length as the 'input' value you've set in the model. Here, DR, DL, TR and TL are sensor values.
+The .predict() method requires an array as an input, that has the same length as the 'input' value you've set in the model. Here, DR, DL, TR and TL are sensor values.
 
 It returns an array with the length of the 'output' value you've set in the model above.
 
@@ -284,7 +284,7 @@ const TORQUE = NN_RESULTS[0] * MAX_TORQUE;
 
 ### Teaching the Neural Network
 
-The .learn() method requires a boolean. 'True' for everything is okay, 'false' for 'I don't want this'. Call this method each time you call the .predict() method, just after calling that method.
+The .learn() method requires a boolean. 'True' for 'everything is okay', 'false' for 'I don't want this'. Call this method each time you call the .predict() method, just after calling that method.
 
 ```javascript
 robot.neuralNetwork.learn(!bTOUCHING_ANY);
