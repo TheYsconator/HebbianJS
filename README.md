@@ -112,8 +112,8 @@ This object contains no non-constructor methods.
 A NNModel uses both NNNodes and NNConnections, along with its own methods, to make for a neural network.
 
 This object contains the following variables:
-* ```.learning_rate``` \<a>: The same as and initially set to ```learning_rate``` of the passed model.
-* ```.weight_history_size``` \<a>: The same as and initially set to ```weight_history_size``` of the passed model.
+* ```.learning_rate``` \<float>: The same as and initially set to ```learning_rate``` of the passed model.
+* ```.weight_history_size``` \<int>: The same as and initially set to ```weight_history_size``` of the passed model.
 * ```.nodes``` \<\[\[NNNode]]>: A list of lists of NNNodes. See ```._generateNodes(int, int[], int)```.
 * ```.connections``` \<\[\[NNConnection]]>: A list of lists of NNConnections. See ```._generateConnections()```.
 
