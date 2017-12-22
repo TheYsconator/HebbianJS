@@ -63,7 +63,7 @@ Returns a NNModel object that one can use in their project, given a 'model'. A m
 ```
 
 * ```learning_rate``` is a *required float* that determines the learning rate of the model. A negative value is untested.
-* ```weight_history_size``` is a *required int*. ```Math.Infinity``` would basically disable this functionality. Setting a non-infinite value will only store the last ```weight_history_size``` number of weight deltas. Only steps in which the model actually 'learned' something are counted. This works like a LIFA system. A negative value is untested.
+* ```weight_history_size``` is a *required int*. ```Math.Infinity``` would basically disable this functionality. Setting a non-infinite value will only store the last ```weight_history_size``` number of weight deltas. Only steps in which the model actually 'learned' something are counted. This works like a FIFO system. A negative value is untested.
 * ```input``` is a *required int* that determines the amount of nodes on the input layer. A negative value and zero are untested.
 * ```hidden``` is a *required list of ints* that determines both the amount of hidden layers, and the amount of nodes per each of these hidden layers. The length of the list determines the amount of hidden layers, the values determine the amount of nodes of these layers. This can be an empty array, if no hidden layers are needed. Negative values and zeroes are untested.
 * ```output``` is a *required int* that determines the amount of nodes on the output layer. A negative value and zero are untested.
